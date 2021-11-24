@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet"> -->
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .header::before {
+            content: "";
+            position: absolute;
+            color: white;
+            width: 99%;
+            height: 100%;
+            background-image: url('image/background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -1;
+        }
+        
+        .left img {
+            position: relative;
+            left: 63px;
+            top: 19px;
+            width: 8%;
+            filter: invert(100);
+        }
+        
+        .left div {
+            position: relative;
+            left: 26px;
+            top: 26px;
+            color: white;
+            font-size: 37px;
+            width: 22%;
+        }
+        
+        .mid .navbar {
+            position: relative;
+            left: 23vw;
+            top: -85px;
+            width: 50%;
+            font-size: 35px;
+        }
+        
+        .navbar li {
+            display: inline;
+            padding: 17px;
+            font-weight: bolder;
+            color: white;
+        }
+        
+        .navbar a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .navbar a:hover,
+        .navbar li a:active {
+            color: rgb(197, 195, 195);
+        }
+        
+        .navbar a:active {
+            color: rgb(24, 144, 30);
+        }
+        
+        .right {
+            position: absolute;
+            top: 6px;
+            right: 44px;
+            display: inline-block;
+        }
+        
+        .btn {
+            font-size: 25px;
+            color: black;
+            background-color: snow;
+            border-radius: 15px;
+            cursor: pointer;
+            margin: 19px 5px;
+            padding: 1px 8px;
+            border: 1px solid rgb(172, 169, 169);
+        }
+        
+        .btn:hover {
+            color: rgb(73, 73, 73);
+        }
+        
+        .container {
+            width: 39%;
+            position: relative;
+            border-radius: 22px;
+            top: 75px;
+            border: 2px solid #c3bdbd;
+            left: 20px;
+        }
+        
+        .container .heading {
+            color: white;
+            font-weight: bolder;
+            text-align: center;
+            font-size: 19px;
+        }
+        
+        .container input {
+            text-decoration: none;
+        }
+        
+        .formGroup input {
+            color: black;
+            text-align: center;
+            display: block;
+            width: 58%;
+            margin: 16px auto;
+            font-size: 24px;
+            border-radius: 25px;
+            padding: 5px;
+            font-weight: bolder;
+            outline: none;
+            border: none;
+        }
+        
+        .formGroup input:hover {
+            border: 1.5px solid rgb(131, 85, 238);
+        }
+        
+        .formButton {
+            font-size: 26px;
+            font-weight: bolder;
+            display: block;
+            width: 61%;
+            margin: 4px 19%;
+            padding: 3px;
+            cursor: pointer;
+            border-radius: 17px;
+            color: rgb(12 24 25);
+            background-color: rgb(241 241 241);
+            border: 1px solid gray;
+        }
+        
+        .formButton:hover {
+            border: 1.5px solid rgb(131, 85, 238);
+            background-color: rgb(209, 207, 207);
+        }
+        
+        #copywrite {
+            position: relative;
+            bottom: -109px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="left">
+            <img src="./image/dumbbell.png" alt="" id="img1">
+            <div>XYZ Fitness</div>
+        </div>
+        <div class="mid">
+            <div class="navbar">
+                <ul>
+                    <li> <a href="#">Home</a> </li>
+                    <li> <a href="#">Contact Us</a> </li>
+                    <li> <a href="#">Services</a> </li>
+                    <li> <a href="#">About</a> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us </button>
+            <button class="btn">Email Us</button>
+        </div>
+    </div>
+    <div class="container">
+        <form action="#" method="POST">
+            <div class="heading">
+                <h1>Join the best Gym in Lucknow</h1>
+            </div>
+            <div class=" formGroup">
+                <input type="text" name="name" placeholder="enter your Name">
+            </div>
+            <div class="formGroup">
+                <input type="text" name="name" placeholder="enter your Age">
+            </div>
+            <div class="formGroup">
+                <input type="text" name="name" placeholder="enter your Gender">
+            </div>
+            <div class="formGroup">
+                <input type="text" name="name" placeholder="enter your Weight">
+            </div>
+            <div class="formGroup">
+                <input type="text" name="name" placeholder="enter your Locality">
+            </div>
+            <button class="formButton">Submitt</button>
+        </form>
+    </div>
+    <p id="copywrite">Copywrite@CodeWithHarry</p>
+</body>
+
+</html>
